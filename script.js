@@ -87,7 +87,7 @@ btnHold.addEventListener('click', function () {
     currentScore[activePlayer];
 
   if (scores[activePlayer] >= targetScore) {
-    alert(`플레이어 ${activePlayer + 1}가 승리했습니다!`);
+    alert(`player ${activePlayer + 1}의 승리입니다!`);
     initGame();
   } else {
     switchPlayer();
