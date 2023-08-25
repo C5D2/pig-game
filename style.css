@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Varela+Round&display=swap');
+
+html {
+  font-size: 65%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: bold;
+  height: 100vh;
+  color: #dcdada;
+  background-color: #dbc4f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  display: flex;
+  width: 100rem;
+  height: 70rem;
+  background-color: rgba(255, 255, 255, 0.169);
+  backdrop-filter: blur(20%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.player {
+  flex: 50%;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+.turn {
+  position: absolute;
+  font-size: 4rem;
+  color: #afb0d1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+}
+
+.name {
+  position: relative;
+  font-size: 4rem;
+  color: #faf3f0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 500;
+  margin-top: 0.3px;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #ffe082;
+  margin-top: auto;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.379);
+}
+
+.player--active .name {
+  font-weight: 800;
+}
+
+.player--active .score {
+  font-weight: 600;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: #caded9;
+  opacity: 0.8;
+  border-radius: 8px;
+  color: #faf3f0;
+  width: 65%;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current-title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  color: #faf3f0;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #afb0d1;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: azure;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0);
+}
+
+.btn::first-letter {
+  font-size: 2rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn__new {
+  top: 11rem;
+}
+
+.btn__roll {
+  top: 43rem;
+}
+
+.btn__hold {
+  top: 49rem;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  border: none;
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 24rem;
+  transform: translateX(-50%);
+  height: 10rem;
+}
+
+.hidden {
+  display: none;
+}
