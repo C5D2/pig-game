@@ -13,4 +13,4 @@ https://c5d2.github.io/pig-game/
 player2의 플레이 중 new game을 누르면 '✨'가 두 플레이어 모두에게 뜨는 현상 수정
 
 ## 게임 내 주사위 이미지 출처
-<a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by IYIKON - Flaticon</a>
+직접 제작한 주사위 이미지 파일로 교체
